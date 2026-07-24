@@ -1,4 +1,4 @@
-**More Capable, Less Faithful: A Multilingual Analysis of (Un)Solvability Detection in LLMs**
+## More Capable, Less Faithful: A Multilingual Analysis of (Un)Solvability Detection in LLMs
 
 ## Dataset
 
