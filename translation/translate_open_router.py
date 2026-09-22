@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-English-to-Greek dataset translation via OpenRouter (Claude Sonnet 4.6).
+English-to-target-language dataset translation via OpenRouter (Claude Sonnet 4.6).
 """
 
 import argparse
