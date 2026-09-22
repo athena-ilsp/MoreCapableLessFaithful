@@ -48,8 +48,6 @@ _EXCLUDED_PATTERNS = ["70b", "70B"]
 MODEL_LAYERS: Dict[str, List[int]] = {
     # 32 transformer blocks, hidden_size=4096
     "llama_31_8b_instruct":        [1, 8, 16, 24, 32],
-    # 32 transformer blocks, hidden_size=4096
-    # "deepseek_r1_distill_llama8b": [1, 8, 16, 24, 32],
     # 36 transformer blocks, hidden_size=2560
     "qwen3_4b_instruct":           [1, 9, 18, 27, 36],
     # 48 transformer blocks, hidden_size=2048
@@ -60,8 +58,6 @@ MODEL_LAYERS: Dict[str, List[int]] = {
     "Llama-Krikri-8B-Instruct":    [1, 8, 16, 24, 32],
     # 32 transformer blocks, hidden_size=4096 (Llama 3 8B base, French)
     "French-Alpaca-Llama3-8B-Instruct-v1.0": [1, 8, 16, 24, 32],
-    # 52 blocks, hidden_size=2688, hybrid Mamba/attention (nemotron_h)
-    "NVIDIA-Nemotron-3-Nano-30B-A3B-BF16":   [1, 13, 26, 39, 52],
 }
 
 
