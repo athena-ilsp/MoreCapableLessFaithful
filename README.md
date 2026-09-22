@@ -1,6 +1,6 @@
 ## More Capable, Less Faithful: A Multilingual Analysis of Mathematical (Un)Solvability Detection in LLMs
 
-Official implementation of ["More Capable, Less Faithful: A Multilingual Analysis of Mathematical (Un)Solvability Detection in LLMs"](https://arxiv.org/abs/2608.30463).
+Official implementation of ["More Capable, Less Faithful: A Multilingual Analysis of Mathematical (Un)Solvability Detection in LLMs"](https://arxiv.org/abs/2608.30463), published at the Multilingual Representation Learning (MRL) Workshop at EMNLP 2026.
 
 
 > [!WARNING]
