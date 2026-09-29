@@ -3,29 +3,29 @@
 Official implementation of ["More Capable, Less Faithful: A Multilingual Analysis of Mathematical (Un)Solvability Detection in LLMs"](https://arxiv.org/abs/2608.30463), published at the Multilingual Representation Learning (MRL) Workshop at EMNLP 2026.
 
 
-> [!WARNING]
-> This codebase is currently under development and not yet ready for general use.
-
-
-## Abstract
-
-> Solvability detection is one of the most challenging aspects of mathematical reasoning for
-Large Language Models (LLMs). While prior
-work has studied this capability extensively,
-these analyses have been limited to English.
-Consequently, it remains unclear whether multilingual failures arise from differences in internal Solvability Belief or from languagedependent failures to express it. To address this
-gap, we introduce the first multilingual benchmark of paired solvable and unsolvable mathematical problems, extending ReliableMath
-to French and Greek. Using this, we train
-multilingual probes predicting Solvability Belief and analyze the solvability detection capabilities of state-of-the-art LLMs behaviorally,
-representationally, and in terms of faithfulness. We find that Solvability Belief is encoded
-as a largely universal, language-agnostic feature, and that higher-resource languages such
-as English, despite achieving stronger mathematical reasoning performance, exhibit lower
-solvability-detection faithfulness.
-
-
 ## Installation
 
-*To be updated.*
+Requires Python 3.11.
+
+There are two requirements files, since `gemma-4-31B-it` needs newer `transformers`/`vllm`
+releases than every other model:
+
+| Models | File |
+|---|---|
+| Qwen, Llama, Krikri, Alpaca models | `requirements.txt` |
+| `gemma-4-31B-it` | `requirements-gemma4.txt` |
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+
+pip install -r requirements.txt          # default
+pip install -r requirements-gemma4.txt   # for gemma-4-31B-it 
+```
+
+`translation/translate_open_router.py` needs an `OPENROUTER_API_KEY`
+environment variable (or `--api_key`) if you use the OpenRouter translation
+path instead of the local vLLM one.
 
 ## Dataset
 
